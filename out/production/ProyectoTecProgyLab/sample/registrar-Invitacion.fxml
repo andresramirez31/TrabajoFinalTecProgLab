@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistrarInvitacion">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Id invitacion">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></Label>
+                  <TextField fx:id="txtId" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin></TextField>
+                  <Label text="Invitado registrado" GridPane.rowIndex="1" />
+                  <Label text="Lleva acompañante?" GridPane.rowIndex="2" />
+                  <Label text="Cedula Adicional del acompañante" GridPane.rowIndex="3" />
+                  <Label text="Numero de mesa" GridPane.rowIndex="4" />
+                  <Label text="Nombre del salon" GridPane.rowIndex="5" />
+                  <Label text="Tipo de fiesta" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="opcionInvitado" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="btSi" mnemonicParsing="false" text="Si" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <RadioButton fx:id="btNo" mnemonicParsing="false" text="No" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </RadioButton>
+                  <TextField fx:id="txtCelAdd" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtMesa" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="nomSal" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="tipoFiesta" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button fx:id="btGuard" mnemonicParsing="false" onAction="#btGuard_accion" text="Guardar" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </GridPane>
+         </children></VBox>
+   </children>
+</AnchorPane>

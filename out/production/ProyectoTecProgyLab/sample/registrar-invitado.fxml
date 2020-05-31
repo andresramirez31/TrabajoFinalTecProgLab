@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistrarInvitado">
+   <children>
+      <VBox alignment="CENTER" depthTest="ENABLE" prefHeight="500.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="Registro de los invitados" />
+            <GridPane maxWidth="-Infinity" prefWidth="400.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.6" minWidth="10.0" prefWidth="197.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.60000000000002" minWidth="2.0" prefWidth="182.60000000000002" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtid" GridPane.columnIndex="1" />
+                  <TextField fx:id="txtnom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtap" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtedad" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Identificacion del invitado" />
+                  <Label text="Nombre" GridPane.rowIndex="1" />
+                  <Label text="Apellido" GridPane.rowIndex="2" />
+                  <Label text="Edad" GridPane.rowIndex="3" />
+                  <Label text="Numero de documento" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtnrodoc" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Genero" GridPane.rowIndex="5" />
+                  <Label text="Telefono" GridPane.rowIndex="6" />
+                  <Label text="Menu de comida preferido" GridPane.rowIndex="7" />
+                  <TextField fx:id="txttel" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button fx:id="btGuardar" mnemonicParsing="false" onAction="#btGuardar_accion" text="Guardar" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <ComboBox fx:id="opcionGenero" onMouseClicked="#opcionGenero_click" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="opcionMenu" onMouseClicked="#opcionMenu_click" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
